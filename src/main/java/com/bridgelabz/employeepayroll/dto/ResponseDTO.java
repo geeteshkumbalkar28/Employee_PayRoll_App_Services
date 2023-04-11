@@ -1,5 +1,9 @@
 package com.bridgelabz.employeepayroll.dto;
 
+import com.bridgelabz.employeepayroll.model.EmpData;
+
+import java.util.List;
+
 public class ResponseDTO {
     private String message;
     private Object data;

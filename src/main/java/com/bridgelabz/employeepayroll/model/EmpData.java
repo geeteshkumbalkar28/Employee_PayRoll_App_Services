@@ -13,6 +13,9 @@ public class EmpData {
     private String name;
     private double salary;
 
+    public EmpData() {
+    }
+
     public EmpData(EmpDTO empDTO) {
         this.name = empDTO.name;
         this.salary = empDTO.salary;
