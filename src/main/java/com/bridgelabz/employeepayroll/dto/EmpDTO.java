@@ -1,7 +1,7 @@
 package com.bridgelabz.employeepayroll.dto;
 
 public class EmpDTO {
-    private String name;
-    private double salary;
+    public String name;
+    public double salary;
 
 }
