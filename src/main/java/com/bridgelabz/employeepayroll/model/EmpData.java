@@ -1,5 +1,6 @@
 package com.bridgelabz.employeepayroll.model;
 
+import com.bridgelabz.employeepayroll.dto.EmpDTO;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -10,7 +11,9 @@ public class EmpData {
     @GeneratedValue
     private int id;
     private String name;
-    private double Salary;
+    private double salary;
+
+
 
     public String getName() {
         return name;
@@ -21,10 +24,10 @@ public class EmpData {
     }
 
     public double getSalary() {
-        return Salary;
+        return salary;
     }
 
     public void setSalary(double salary) {
-        Salary = salary;
+        this.salary = salary;
     }
 }
