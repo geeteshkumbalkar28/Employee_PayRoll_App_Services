@@ -34,4 +34,22 @@ public class EmployeePayrollController {
         ResponseDTO responseDTO =new ResponseDTO("Eployee Data Found",empData);
         return responseDTO;
     }
+    @PutMapping("Edit/{id}")
+    public EmpData editEmployee(@RequestBody EmpDTO empDTO,@PathVariable int id){
+        EmpData empData = employeeService.UpdateById(empDTO,id);
+        return empData;
+    }
+    @DeleteMapping("/Delete/{id}")
+    public String deleteUserData(@PathVariable int id){
+        String employeData=employeeService.deleteById(id);
+
+        return employeData;
+    }
+    @DeleteMapping("/DeleteAll")
+    public String deleteAllUser(){
+        String employeeData = employeeService.DeleteAll();
+        return employeeData;
+    }
+
+
 }

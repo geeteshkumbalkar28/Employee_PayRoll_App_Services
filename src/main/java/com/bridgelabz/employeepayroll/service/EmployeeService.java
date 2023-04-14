@@ -12,4 +12,10 @@ public interface EmployeeService {
     Optional<EmpData> getEmployeeById(int id);
 
     List<EmpData> getDisplayAllEmployee();
+
+    EmpData UpdateById(EmpDTO empDTO,int id);
+
+    String deleteById(int id);
+
+    String DeleteAll();
 }
